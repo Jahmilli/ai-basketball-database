@@ -4,7 +4,7 @@
 
 This repository handles database management for AI Basketball.
 
-To view a model of the database, have a look at <Insert Link to ERD>
+To view a model of the database, have a look at https://drive.google.com/file/d/1jXKXyofjXem1WyTLx1l5rVZBeOUQvlcN/view?usp=sharing
 The management of this database is done using **sqitch** as a means of managing updates,
 reverts and verifications of SQL scripts. The back end database engine used is **Postgres**.
 
