@@ -60,7 +60,7 @@ To test any changes you've made, you will need to apply the changes to a postgre
 #### Start up a Postgres server
 
 ```
-docker run --rm -itd --name aibasketball-postgres -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=mydb -p 5432:5432 postgres
+docker run --rm -itd --name aibasketball -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=mydb -p 5432:5432 postgres
 ```
 
 Then as an example, to apply your changes, run:
