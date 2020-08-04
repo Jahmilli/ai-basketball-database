@@ -1,4 +1,4 @@
-# Gymbuddy Database
+# AI Basketball Database
 
 ## Description
 
