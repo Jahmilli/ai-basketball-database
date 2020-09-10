@@ -14,7 +14,7 @@ CREATE TABLE videos (
   type_of_shot TEXT,
   storage_uri TEXT,
   feedback TEXT,
-  created_timestamp timestamptz -- Check is this is correct...
+  uploaded_timestamp timestamptz -- Check is this is correct...
 );
 
 COMMIT;
