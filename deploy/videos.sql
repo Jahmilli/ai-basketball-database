@@ -16,5 +16,4 @@ CREATE TABLE videos (
   uploaded_timestamp timestamptz
 );
 
-INSERT INTO videos (user_id, name, description, is_processed, angle_of_shot, type_of_shot, storage_uri, feedback, uploaded_timestamp) VALUES ('test', 'test name', 'description test', 't', 'front facing', 'three pointer', 's3://dev-bucket/Threshholds.avi', '', current_timestamp);
 COMMIT;
