@@ -12,7 +12,7 @@ CREATE TABLE videos (
   angle_of_shot TEXT,
   type_of_shot TEXT,
   storage_uri TEXT,
-  feedback TEXT,
+  feedback JSONB NULL,
   uploaded_timestamp timestamptz
 );
 
