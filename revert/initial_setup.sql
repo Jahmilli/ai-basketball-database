@@ -2,6 +2,7 @@
 
 BEGIN;
 
+DROP TABLE users;
 DROP TABLE videos;
 DROP EXTENSION "uuid-ossp";
 

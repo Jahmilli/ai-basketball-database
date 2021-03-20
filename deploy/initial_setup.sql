@@ -1,4 +1,4 @@
--- Deploy gymbuddy:videos to pg
+-- Deploy aibasketball:initial_setup to pg
 
 BEGIN;
 
@@ -8,12 +8,12 @@ CREATE TABLE videos (
   user_id TEXT,
   name TEXT,
   description TEXT,
-  is_processed BOOLEAN,
+  is_processed BOOLEAN DEFAULT FALSE,
   angle_of_shot TEXT,
   type_of_shot TEXT,
   storage_uri TEXT,
-  feedback JSONB NOT NULL,
-  created_timestamp timestamptz NOT NULL
+  feedback JSONB,
+  created_timestamp timestamptz DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE users (
@@ -21,8 +21,9 @@ CREATE TABLE users (
   email TEXT NOT NULL,
   first_name TEXT NOT NULL,
   last_name TEXT NOT NULL,
-  date_of_birth: timestamptz NOT NULL,
-  created_timestamp timestamptz NOT NULL
+  date_of_birth timestamptz DEFAULT CURRENT_TIMESTAMP,
+  last_updated timestamptz DEFAULT CURRENT_TIMESTAMP,
+  created_timestamp timestamptz DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;
