@@ -26,4 +26,12 @@ CREATE TABLE users (
   created_timestamp timestamptz DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE results (
+  id TEXT NOT NULL,
+  user_id TEXT,
+  score_prep TEXT NOT NULL
+  score_exec TEXT NOT NULL
+  score_follow TEXT NOT NULL
+)
+
 COMMIT;
