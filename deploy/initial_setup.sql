@@ -27,11 +27,11 @@ CREATE TABLE users (
 );
 
 CREATE TABLE results (
-  id TEXT NOT NULL,
+  id uuid DEFAULT uuid_generate_v4(),
   user_id TEXT,
-  score_prep TEXT NOT NULL
-  score_exec TEXT NOT NULL
+  score_prep TEXT NOT NULL,
+  score_exec TEXT NOT NULL,
   score_follow TEXT NOT NULL
-)
+);
 
 COMMIT;
