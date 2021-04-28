@@ -31,7 +31,8 @@ CREATE TABLE results (
   user_id TEXT,
   score_prep TEXT NOT NULL,
   score_exec TEXT NOT NULL,
-  score_follow TEXT NOT NULL
+  score_follow TEXT NOT NULL,
+  created_timestamp timestamptz DEFAULT CURRENT_TIMESTAMP
 );
 
 COMMIT;
